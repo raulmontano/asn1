@@ -103,8 +103,8 @@ class GeneralizedTime extends BaseTime
             $frac = $match[7];
             // DER restricts trailing zeroes in fractional seconds component
             if ('0' === $frac[strlen($frac) - 1]) {
-                throw new DecodeException(
-                    'Fractional seconds must omit trailing zeroes.');
+                //throw new DecodeException(
+                //    'Fractional seconds must omit trailing zeroes.');
             }
             $frac = $frac;
         } else {
